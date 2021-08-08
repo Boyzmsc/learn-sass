@@ -1,8 +1,6 @@
-$image_url: "./images";
-
 body {
   height: 100vh;
-  background-image: url("#{$image_url}/bg.jpg");
+  background-image: url("./images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,7 +49,7 @@ body {
       @for $i from 1 through 32 {
         // .hero
         &:nth-child(#{$i}) .image {
-          background-image: url("#{$image_url}/hero#{$i}.png");
+          background-image: url("./images/hero#{$i}.png");
         }
       }
     }
